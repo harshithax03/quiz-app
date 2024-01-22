@@ -1,0 +1,134 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: rgb(34, 33, 33);
+  --container-color: rgb(239, 239, 239);
+  --wrong: rgb(178, 92, 92);
+  --right: rgb(86, 109, 86);
+  --opt: rgb(207, 207, 207);
+}
+body {
+    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.head {
+  color: var(--container-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.display-container {
+  overflow: hidden;
+  display: none;
+}
+.start-btn {
+  /* margin: 10px; */
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px rgb(120, 123, 195);
+  border: 1px solid rgb(120, 123, 195);
+  background-color: var(--primary-color);
+  color: var(--container-color);
+  cursor: pointer;
+}
+.start-btn:active {
+    box-shadow: 3px 3px rgb(42, 42, 42);
+    transform: translateY(4px);
+    border: none;
+  }
+.quiz-container {
+  height: 350px;
+  width: 400px;
+  border: px solid black;
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 20px;
+  background-color: var(--container-color);
+}
+.ques {
+  font-size: 1.4rem;
+  font-weight: 600;
+  /* flex: ; */
+}
+.ans {
+  margin-top: 15px;
+  border: none;
+  background-color: var(--opt);
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 15px;
+  height: 40px;
+
+}
+.ans:hover {
+  box-shadow: 1px 1px 3px rgb(109, 109, 109);
+}
+.btn {
+  flex: 1;
+  margin: 3px;
+}
+.right-opt {
+  background-color: var(--right);
+}
+.wrong-opt {
+  background-color: var(--wrong);
+}
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--container-color);
+  }
+  .github-icon {
+    transform: scale(1.5);
+    color: var(--container-color);
+  }
+.nxt-btn{
+    font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+  margin: 15px;
+  /* width: 100px; */
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 0px rgb(120, 123, 195); */
+  border: 1px solid rgb(9, 9, 9);
+  background-color: var(--container-color);
+  color: var(--primary-color);
+  cursor: pointer;
+ float: right;
+}
+.ans:disabled{
+    color: black;
+    cursor: no-drop;
+}
+#ans-options{
+    display: flex;
+    flex-direction: column;
+}
