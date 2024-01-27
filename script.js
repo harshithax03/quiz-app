@@ -110,17 +110,17 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct ===  "true";
     if(isCorrect){
         selectedBtn.classList.add('right-opt')
-        body.classList.add('right-opt')
+        // body.classList.add('right-opt')
         
     }
     else {
         selectedBtn.classList.add('wrong-opt')
-        body.classList.add('wrong-opt')
+        // body.classList.add('wrong-opt')
     }
     Array.from(ansOptions.children).forEach(button =>{
         if(button.dataset.correct === "true"){
             button.classList.add('right-opt');
-            body.classList.add('right-opt')
+            // body.classList.add('right-opt')
            
         }
         button.disabled = true;
